@@ -1,0 +1,1 @@
+$(function(){var t=document.createElement("script"),e=(t.src="https://zz.bdstatic.com/linksubmit/push.js",document.getElementsByTagName("script")[0]);e.parentNode.insertBefore(t,e)});

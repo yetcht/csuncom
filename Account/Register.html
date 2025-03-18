@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <base  />
+    <meta charset="utf-8" />
+    <title>用户注册 - 深圳市华顺康通信技术有限公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta property="og:image" content="../index.html" />
+    <!--[if lte IE 8]><script>window.location.href='http://support.dmeng.net/upgrade-your-browser.html?referrer='+encodeURIComponent(window.location.href);</script><![endif]-->
+    <link rel="canonical" href="Register.html" />
+    <link rel="shortcut icon" type="image/x-icon" href="../r01/75AD0/p02/20240402/20240402144406446cc718d.png" />
+    <link href="../assets/lib/icheck/skins/minimal/_all.css" rel="stylesheet" />
+    <link href="../assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/icomoon/iconfont222e.css?v=20210518" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/pub/public4974.css?v=20240410001" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/V2/style4974.css?v=20240410001" />
+    <link rel="stylesheet" type="text/css" href="../r01/75AD0/css/V2_extension703c.css?v=%221712045221%22" />
+    <script src="../assets/js/pub/jquery-1.9.1.min.js"></script>
+    <script src="../assets/lib/layer/layer.js"></script>
+    <script src="../assets/lib/icheck/icheck.min.js"></script>
+    <script src="../assets/js/pub/jquery.validate.min.js"></script>
+    <script src="../assets/js/pub/jsencrypt.js"></script>
+    <script src="../assets/js/pub/common4974.js?v=20240410001"></script>
+    <script src="../assets/js/pub/jigsaw4974.js?v=20240410001"></script>
+    
+    
+
+</head>
+<body class="">
+        <div class="header ellipsis" id="header">
+            <div class="wrap">
+                <h1 class="logo fl" style="width:auto;">
+                    
+    <!--公司logo-->
+        <a href="../index.html" style="background: url(../assets/img/pub/logo.png) no-repeat center;"></a>
+
+                </h1>
+                <span class="logorightspan border-left">用户注册</span>
+            </div>
+        </div>
+    
+
+
+
+<div class="RegisterBox rel">
+    
+        <div class="register_tip">
+            
+    <div class="border-transparent rel">
+        
+    </div>
+
+        </div>
+        <div class="loginRegister wrap" style="width:937px">
+            <div class="login fl" style="width:60%;">
+                <div class="col-md-5 border-right" id="loginForm">
+                    <form class="form-horizontal" id="formRegister" autocomplete="off">
+                        <input name="__RequestVerificationToken" type="hidden" value="mpa0yDviA1qdeUGJxePWmFy3RphUaiWC1NbB24Z4TnFxJDWcxxsy6R1himxooULJkfD4uGIPxOsUIgTaHHtDKABEi9EUQiVx3X6kMSzdfZ01" />
+                        <div class="logintip color-red hidetip tc" style="width: 430px;margin-left:77px;">
+                            <i class="icon-pub icon-error"></i>
+                            <span></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label width-45"><span class="color-red">*</span>注册账号 ：</label>
+                            <div class="col-md-6 width-54">
+                                <input class="form-con fl inputfocus" data-val="true" data-val-length="账号长度为6-50个字符" data-val-length-max="50" data-val-length-min="6" data-val-required="注册账号必填" id="UserName" name="UserName" placeholder="企业账号/邮箱/手机号码" type="text" value="" />
+                                <input type="hidden" value="All" id="RegisterType">
+                                <input type="hidden" value="0" id="RegisterMobileAndEmailRequired">
+                            </div>
+                        </div>
+                            <div class="form-group reg_phone" style="display:none;">
+                                <label class="col-md-2 control-label width-45"><span class="color-red">*</span>手机号码：</label>
+                                <div class="col-md-6 width-54">
+                                    
+                                    <input class="form-con fl inputfocus" id="Phone" name="Phone" placeholder="填写手机号" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="form-group reg_email" style="display:none;">
+                                <label class="col-md-2 control-label width-45"><span class="color-red">*</span>邮箱：</label>
+                                <div class="col-md-6 width-54">
+                                    <input class="form-con fl inputfocus" id="Email" name="Email" placeholder="填写邮箱" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label width-45"><span class="color-red">*</span>图片验证码 ：</label>
+                            <div class="col-md-6 width-54">
+                                <div id="rg_imgslider" class="img-sliderval" data-code="DSSE"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                            <div class="form-group" id="divCode" style="display:none;padding-bottom: 10px;">
+                                <label class="col-md-2 control-label width-45"><span class="color-red">*</span>短信验证码 ：</label>
+                                <div class="col-md-6 width-54" style="display:flex;">
+                                    <input class="fl inputfocus" data-val="true" data-val-length="短信校验码为4位数字" data-val-length-max="4" data-val-regex="字段 SecurityCode 必须与正则表达式“^\d{4}$”匹配。" data-val-regex-pattern="^\d{4}$" id="SecurityCode" name="SecurityCode" placeholder="短信验证码" style="width:178px;display:inline;height: 36px;text-indent: 6px;font-size: 14px;line-height: 1.42857143;color: #555;border: 1px solid #dfdfdf;    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);" type="text" value="" />
+                                    <input id="btnCode" class="btn-input btn-default" style="margin-left:10px;padding: 6px 10px" type="button" value=获取验证码 />
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        <input id="NotRegisterVerify" type="hidden" value="0" />
+                        <div class="form-group">
+                            <label class="col-md-2 control-label width-45"><span class="color-red">*</span>用户密码 ：</label>
+                            <div class="col-md-6 width-54">
+                                <input class="form-con fl inputfocus" data-val="true" data-val-length="用户密码至少6个字符长度" data-val-length-max="100" data-val-length-min="6" data-val-required="用户密码必填" id="Password" name="Password" placeholder="用户密码" type="password" />
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label width-45"><span class="color-red">*</span>确认密码 ：</label>
+                            <div class="col-md-6 width-54">
+                                <input class="form-con fl inputfocus" data-val="true" data-val-equalto="两次输入的密码不一致" data-val-equalto-other="*.Password" id="ConfirmPassword" name="ConfirmPassword" placeholder="确认密码" type="password" />
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                                                <div class="form-group tc" style="margin-left:227px">
+                            <label style="float:none;vertical-align: baseline;">
+                                <input id="AgreeMent" type="checkbox" checked="checked" />
+                            </label>
+                            我已阅读并同意<a href="javascript:RegisterAgree();" class="color-theme">《用户协议》</a>
+                        </div>
+                        <div class="form-group">
+                            <input id="PromoteCode" name="PromoteCode" placeholder="推广码" style="display:none" type="text" value="" />
+                            <input type="submit" value="点击注册" class="btn-input btn-default" id="btnRegister" style="width:54%;margin-left:45%">
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="Register-right" style="width: 40%;padding: 30px 0px 13px 18px;">
+                <div class="Register-right1">
+                    <h2>我已注册账号，现在登录</h2>
+                    <input type="button" value="立即登录" class="Reg-login fs-16" onclick="Login()" />
+                    <br />
+                    <a class="color-gray a-hover" href="RetrievePasswordeb00.html?Length=7">忘记密码?</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+</div>
+
+
+    <div class="mt30 tc fs-12 wrap">
+        
+    <div class="border-transparent rel">
+        <a href="http://beian.miit.gov.cn/">粤ICP备18067779号-1</a>
+    </div>
+
+    </div>
+    
+        <script src="../assets/js/v3/register4974.js?v=20240410001"></script>
+
+        <script async src="../assets/js/pub/bdpush4974.js?v=20240410001"></script>
+        
+    
+</body>
+
+
+</html>

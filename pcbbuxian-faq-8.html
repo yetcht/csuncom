@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--2级页面-->
+<html lang="zh">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <base  />
+    <meta charset="utf-8" />
+    <title>PCB布线与布局隔离准则? - 深圳市华顺康通信技术有限公司</title>
+    <meta name="keywords" content="PCB布线" />
+    <meta name="description" content="PCB布线与布局隔离准则?在PCB设计中PCB布线布局隔离准则：强弱电流隔离、大小电压隔离，高低频率隔离、输入输出隔离、数字模拟隔离、输入输出隔离，分界标准为相差一个数量级。隔离方法包括：空间远离、地线隔开。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta property="og:image" content="index.html" />
+    <!--[if lte IE 8]><script>window.location.href='http://support.dmeng.net/upgrade-your-browser.html?referrer='+encodeURIComponent(window.location.href);</script><![endif]-->
+    <link rel="canonical" href="pcbbuxian-faq-8.html" />
+    <link rel="shortcut icon" type="image/x-icon" href="r01/75AD0/p02/20240402/20240402144406446cc718d.png" />
+
+    <link rel="preload" href="bundles/css/v2/home4b39.css?t=20240410001" as="style">
+    <link rel="preload" href="r01/75AD0/css/v2_extension703c-2.css?v=%221712045221%22" as="style">
+    <link rel="preload" href="bundles/js/v3/home4b39.js?t=20240410001" as="script">
+
+    <link href="bundles/css/v2/home4b39.css?t=20240410001" rel="stylesheet"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="r01/75AD0/css/v2_extension703c-2.css?v=%221712045221%22" />
+    
+
+    <script src="bundles/js/v3/home4b39.js?t=20240410001"></script>
+
+    
+    
+</head>
+<body class="">
+
+
+<link href="assets/css/pcb_new/header4974.css?v=20240410001" rel="stylesheet" />
+
+<!--头部最上边-改版start-->
+<style>
+    .Welcome_title {
+        cursor: pointer;
+    }
+</style>
+<div class="Head pcb_login" id="HeadToper">
+    <div class="HeadContainer clearfix">
+        <div class="headtop_left fl">
+欢迎来到深圳市华顺康通信技术有限公司！                <a href="Account/Login.html" class="Login">立即登录</a>
+                <span class="headline">|</span>
+                <a href="Account/Register.html" class="Register">免费注册</a>
+        </div>
+        <div class="headtop_right fr">
+            <ul>
+                                        <li>
+                            <div class="languagebox height28" id="selectCurrency">
+                                <div class="language_title">
+                                    <a href="javascript:;" class=" currency" data-currency="RMB" data-tag="0"><i class="icon-pub icon-RMB"></i>人民币<i class="icon-pub iconup"></i></a>
+                                </div>
+                                <div class="language_content">
+                                            <a href="javascript:;" class="currencyitem a-hover" data-currency="USD" data-tag="0"><i class="icon-pub icon-USD"></i>美元</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="header-mian">
+        <!--head-->
+        <div class="header">
+            <div class="pcb_container rel" style="height:100%;">
+                
+            <a href="index.html" >
+                <div class="ui-left headerlog">
+                    <img class="logo-r" src="r01/75AD0/p02/20240402/2024040214495949598200fb.png" style="max-height:120px;" />
+                </div>
+            </a>
+
+                <ul class="shortcut ui-right">
+                    <li>
+                        <div class="dt dtbig">
+                            
+                            <p>
+                                服务热线：
+                                
+    <!--公用-->
+13510814250
+                            </p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--导航-->
+    <div class="pcb_nav clearfix bg-theme" id="stickHeader">
+        <div class="navitems " id="nav">
+            <div class="pcb_container">
+                <div class="navitems-group1 nav-box ui-left fs-14">
+                    <ul class="list">
+                            <li class="nav_li fl">
+                                <a href="index.html"  class="">
+                                    首页
+                                                                    </a>
+                            </li>
+                            <li class="nav_li fl">
+                                <a href="product/list.html"  class="">
+                                    产品中心
+                                                                    </a>
+                            </li>
+                            <li class="nav_li fl">
+                                <a href="info/news/list.html"  class="">
+                                    行业资讯
+                                                                    </a>
+                            </li>
+                            <li class="nav_li fl">
+                                <a href="gongsijianjie-custom-4.html"  class="">
+                                    关于华顺康
+                                                                    </a>
+                            </li>
+                            <li class="nav_li fl">
+                                <a href="lianxiwomen-custom-5.html"  class="">
+                                    联系我们
+                                                                    </a>
+                            </li>
+                            <li class="nav_li fl">
+                                <a href="info/solution/list.html"  class="">
+                                    可制造性设计
+                                                                    </a>
+                            </li>
+                            <li class="nav_li fl">
+                                <a href="info/faq/list.html"  class="">
+                                    常见问题
+                                                                    </a>
+                            </li>
+                                                    <li class="nav_li fr">
+                                <a href="Account/Register.html" style="display: flex;">
+                                    免费注册
+                                </a>
+                            </li>
+                            <li class="nav_li fr">
+                                <a href="Account/Login.html" style="display: flex;">
+                                    <span class="iconfont icon-xinxi fs-24"></span>登录
+                                </a>
+                            </li>
+                    </ul>
+                    <div class="nav-line" style="left: 0px; width: 72px;display:none"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <script>
+            /*导航下拉*/
+            $('.navitems-group1 ul li').mouseover(function () {
+                $(this).find('.subtopic').show();//stop(true, true).slideDown(200)
+            })
+            $('.navitems-group1 ul li').mouseout(function () {
+                $(this).find('.subtopic').hide();//stop(true, true).slideUp(200)
+            })
+        </script>
+    <script>
+        $(function () {
+            /*导航悬停*/
+            if (document.body.clientWidth) {
+
+                $(document).add(window).scroll(function () {
+                    var t = document.documentElement.scrollTop || document.body.scrollTop;
+                    var membernav = $("#nav");
+                    membernav.addClass("bg-theme");
+                    if (t >= 110) {
+                        membernav.addClass("navitems-scroll");
+                    } else {
+                        membernav.removeClass("navitems-scroll");
+                    }
+                    //产品列表风格2页面左侧导航栏
+                    var pt2membernav = $("#pr_categroys_menu");
+                    if (pt2membernav.length > 0 && $("#product_right").height() > $(".pr_categroys").height()) {
+                        if (t >= 110) {
+                            pt2membernav.addClass("suspension");
+                        }
+                        else {
+                            pt2membernav.removeClass("suspension");
+                        }
+                    }
+                });
+
+
+                //var pt2membernav = $("#pr_categroys_menu");
+                //if (pt2membernav.length > 0) {
+                //    var offsetTop = $("#pr_mian")[0].offsetTop;
+                //    $(document).add(window).scroll(function () {
+                //        pcb_product_l();
+                //    });
+                //    function pcb_product_l() {
+                //        var r_ht = $("#product_right").height();
+
+                //        var scrollTop = $(window).scrollTop();
+                //        if (scrollTop > offsetTop) {
+                //            var top = scrollTop - offsetTop + 48;
+                //            var maxTop = r_ht - pt2membernav.height();
+                //            if (top > maxTop) top = maxTop;
+                //            pt2membernav.css("top", top + "px");
+                //        }
+                //        else {
+                //            pt2membernav.css("top", "0px");
+                //        }
+                //    }
+                //}
+
+            }
+        })
+
+
+    </script>
+<script src="assets/js/pcb_new/nav4974.js?v=20240410001"></script>
+
+
+<!--行业资讯详情页start-->
+
+
+<div class="newsdetails wrap">
+    <div class="newstop">
+        <p class="tl">
+            <a href="index.html" class="a-hover">首页</a><i>&gt;</i>
+            <a href="info/faq/list.html" class="a-hover"></a><i>&gt;</i>
+            <a>PCB布线与布局隔离准则?</a>
+        </p>
+        <h1 class="tc">PCB布线与布局隔离准则?</h1>
+        <p class="new_source tc">
+            <span class="color-lightgray">来源：</span><span class="mr40"> </span>
+            <span class="mr40">2021/7/29</span>
+            <span>浏览量：54</span>
+                <span class="news_keywords ml40">
+                    <span class="mr10">关键词:</span>
+                        <a href="info/faq/list-%3d%3dUENC5biD57q_.html" class="border-hover">PCB布线</a>
+                </span>
+
+        </p>
+    </div>
+    <div class="newsmid fs-14">
+        <p><span style="color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; widows: 1; background-color: rgb(255, 255, 255);">PCB布线与布局隔离准则?</span><br style="color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; white-space: normal; widows: 1; background-color: rgb(255, 255, 255);"/><br style="color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; white-space: normal; widows: 1; background-color: rgb(255, 255, 255);"/><span style="color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; widows: 1; background-color: rgb(255, 255, 255);">在PCB设计中PCB布线布局隔离准则：强弱电流隔离、大小电压隔离，高低频率隔离、输入输出隔离、数字模拟隔离、输入输出隔离，分界标准为相差一个数量级。</span><br style="color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; white-space: normal; widows: 1; background-color: rgb(255, 255, 255);"/><br style="color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; white-space: normal; widows: 1; background-color: rgb(255, 255, 255);"/><span style="color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; widows: 1; background-color: rgb(255, 255, 255);">隔离方法包括：空间远离、地线隔开。</span></p>
+            </div>
+    <div class="newsbotm clearfix">
+        <div class="newsbotm_lf fl">
+                <p>
+                    <a class="color-lightgray">上一篇：</a>
+                </p>
+                <a class="newstitle a-hover color-blue" href="lingjianfengzhuang-faq-7.html">什么是零件封装，它和零件有什么区别？</a>
+            
+        </div>
+
+        <div class="newsbotm_rt fr">
+                <p>
+                    <a class="color-lightgray">下一篇：</a>
+                </p>
+                <a class="newstitle a-hover color-blue" href="shejiliucheng-faq-9.html">PCB设计流程及报价？</a>
+            <div class="articlebottom clearboth">
+                <div class="fr">
+                    <input type="hidden" id="bd_share_url" value=""/>
+    <!-- baidu Button BEGIN -->
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" onclick="return false;" class="popup_copy" data-cmd="copy" title="复制网址" style="background-position: 1px -2289px;"></a>
+        <a href="#" class="bds_more" data-cmd="more"></a>
+    </div>
+    <script>
+        window._bd_share_config = {
+            "common": {
+                "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "16",
+                "onAfterClick": function (cmd) {
+                    //var qty = parseInt($(".sharebtn label").html()) + 1;
+                    //$(".sharebtn label").html(qty);
+                },
+                "onBeforeClick": function (cmd, config) {
+                    var bd_share_url = $("#bd_share_url").val();
+                    if (!isNull(bd_share_url)) {
+                        config.bdUrl = bd_share_url;
+                    }
+                    return config;
+                }
+            },
+            "share": {}
+        };
+        with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'assets/lib/share/api/js/share6e53.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+    <!-- baidu Button END -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--行业资讯详情页end-->
+
+<script src="assets/js/V3/product4974.js?v=20240410001"></script>
+<script src="assets/lib/store/store.legacy.min.js"></script>
+<script>
+    $("input[type='checkbox']").iCheck({
+        checkboxClass: 'icheckbox_minimal-orange',
+        radioClass: 'iradio_minimal-orange',
+        increaseArea: '20%' // optional
+    });
+    $("#doMatch").click(function () {
+        var objArr = new Array();
+        var buyVal = $("#BuyQty").val();
+        if (isNull(buyVal)) {
+            alert(configData.News.txt35, { icon: 7 });
+            return false;
+        }
+        var buyQty = parseInt(buyVal);
+        if (buyQty <= 0) {
+            alert(configData.News.txt36, { icon: 7 });
+            return false;
+        }
+        $('.bom_checked').each(function (index, domEle) {
+            var checked = $(domEle).is(':checked');
+            if (checked) {
+                var model = $(domEle).val();
+                var qty = parseInt($(domEle).data('qty'));
+                var obj = new Object();
+                obj.Model = model;
+                obj.Qty = qty * buyQty;
+                objArr.push(obj);
+            }
+        });
+        if (objArr.length <= 0) {
+            alert(configData.News.txt37, { icon: 7 });
+            return false;
+        }
+        var url = "/Product/SmartMatch";
+        store.remove('preMatchData');
+        store.set('preMatchData', { list: objArr, flag: 0 });
+        location.href = url;
+    });
+</script>
+
+    <link href="assets/css/pcb_new/footer4974.css?v=20240410001" rel="stylesheet" />
+    <!--底部版权-->
+    <div class="footer pcb_footer">
+        <div class="pcb_container">
+            <div class="copyright-group1 clearfix">
+                <div class="foot-nav-sidebar">
+                        <dl class="item">
+                            <dt class="f14">快速链接</dt>
+                                <dd>
+                                    <a href="product/list.html">产品中心</a>
+                                </dd>
+                                <dd>
+                                    <a href="info/news/list.html">新闻资讯</a>
+                                </dd>
+                        </dl>
+                        <dl class="item">
+                            <dt class="f14">关于我们</dt>
+                                <dd>
+                                    <a href="gongsijianjie-custom-4.html">公司简介</a>
+                                </dd>
+                                <dd>
+                                    <a href="lianxiwomen-custom-5.html">公司地址</a>
+                                </dd>
+                        </dl>
+                        <dl class="item">
+                            <dt class="f14">购物指南</dt>
+                                <dd>
+                                    <a href="info/faq/list.html">常见问题</a>
+                                </dd>
+                                <dd>
+                                    <a href="info/solution/list.html">可制造性设计</a>
+                                </dd>
+                        </dl>
+                                    </div>
+                <div class="foot-nav-sea"></div>
+                <div class="foot-tel-center">
+                    <p class="dt f14">
+    <span class="border-transparent pr20 rel disin-block">
+        周一至周六 9:00-18:00
+    </span>
+</p>
+                    <p class="dt f14">全国服务热线：</p>
+                    <em class="color-theme">
+                        
+    <!--公用-->
+13510814250
+                    </em>
+                    <p>客服邮箱：<span class="en">
+    <!--公用-->
+417460040@qq.com</span></p>
+                </div>
+
+                <div class="foot-ewm-right"></div>
+            </div>
+            <div class="copyright-group3 clearfix">
+                <p>
+                    Copyright &#169; 深圳市华顺康通信技术有限公司 版权所有
+                </p>
+                <!--公司地址-->
+                <p>
+                    公司地址：
+    <span class="border-transparent pr20 rel disin-block">
+        深圳宝安石岩料坑朗日工业园一栋二楼（深圳市华顺康通信技术有限公司 / C-suncom communication Co., Ltd.）
+    </span>
+
+                </p>
+            </div>
+            <div class="foot-recordnumber">
+                
+                
+    <div class="border-transparent rel">
+        <a href="http://beian.miit.gov.cn/">粤ICP备18067779号-1</a>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/pcb_new/wow.min.js"></script>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+            new WOW().init();
+        };
+    </script>
+    
+
+    <!--右侧悬浮窗-风格1-start-->
+    <aside class="navtoolbar" id="bartrigger">
+        
+        <div class="toptoolbar">
+            
+        <div class="navbar_default">
+            <a href="javascript:;" class="iconfont icon-phone bg-hover border-hover" rel="nofollow"></a>
+            <div class="right_box hot_line">
+                <i class="box_pointer"></i>
+                <div class="box_head">
+                    <i class="iconfont icon-phone color-theme"></i>
+                    <div class="box_title">
+                        <p class="p1 color-theme">客服热线</p>
+                        
+                        <p class="p2">
+    <span class="border-transparent pr20 rel disin-block">
+        周一至周六 9:00-18:00
+    </span>
+</p>
+                    </div>
+                </div>
+                    <p class="p_line"><span class="color-theme">蒋先生 </span>13510814250</p>
+                    <p class="p_line"><span class="color-theme">华顺康 </span>0755-29163199</p>
+            </div>
+        </div>
+        <div class="navbar_default">
+            
+                <a href="javascript:;" class="iconfont icon-mail bg-hover border-hover" rel="nofollow"></a>
+                <div class="right_box box_email">
+                    <i class="box_pointer"></i>
+                    <div class="box_head">
+                        <i class="iconfont icon-mail color-theme"></i>
+                        <div class="box_title">
+                            <p class="p1 color-theme">企业邮箱</p>
+                            <p class="p2">联系邮箱</p>
+                        </div>
+                    </div>
+                        <p class="p_email">
+                            <a href="mailto:417460040@qq.com" title="417460040@qq.com" rel="nofollow">
+                                    <span class="color-theme"><i class="fa fa-envelope mr5"></i>Email</span><br />
+                                417460040@qq.com
+                            </a>
+                        </p>
+                </div>
+            
+        </div>
+
+
+                <!--新增投诉与建议-->
+            <div class="navbar_default">
+                <a href="OnlineMessage.html" target="_blank" class="iconfont icon-order bg-hover border-hover"></a>
+            </div>
+
+            <div class="navbar_default">
+                <a href="javascript:;" class="iconfont icon-top  bg-hover border-hover" rel="nofollow" onclick="$('body,html').animate({ scrollTop: 0 }, 500);"></a>
+            </div>
+
+        </div>
+    </aside>
+    <!--右侧悬浮窗-风格1-end-->
+<script async src="assets/js/v3/rightNavigation4974.js?v=20240410001"></script>    
+    
+    
+    
+    <script>
+        $(function () {
+            $("img.lazy").lazyload({ effect: "fadeIn", threshold: 200 });
+        });
+    </script>
+        <script async src="assets/js/pub/bdpush4974.js?v=20240410001"></script>
+        
+    
+</body>
+
+
+</html>

@@ -1,0 +1,91 @@
+/* iCheck plugin Minimal skin
+----------------------------------- */
+
+
+/* orange */
+.icheckbox_minimal-orange,
+.iradio_minimal-orange {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background:none;
+    border: solid 1px #ccc;
+    cursor: pointer;
+     z-index:7;
+}
+
+.icheckbox_minimal-orange {
+    
+}
+.icheckbox_minimal-orange:hover {
+    border: solid 1px #EE7700;
+}
+.icheckbox_minimal-orange.checked:hover {
+    border: solid 1px #ccc;
+}
+.icheckbox_minimal-orange.checked::after {
+    content:' ';
+    position:absolute;
+    left:2px;
+    top:2px;
+    width: 11px;
+    height: 6px;
+    border:0px solid #EE7700;
+    border-width:0 0 2px 2px;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    z-index:-1;
+}
+.icheckbox_minimal-orange.disabled {
+    cursor: default;
+    border: solid 1px #E4E4E4;
+}
+.icheckbox_minimal-orange.checked.disabled {
+    border: solid 1px #E4E4E4;
+}
+
+.iradio_minimal-orange {
+    border-radius:50%;
+    -moz-border-radius: 50%;   
+    -webkit-border-radius: 50%; 
+}
+.iradio_minimal-orange:hover {
+        border: solid 1px #EE7700;
+}
+.iradio_minimal-orange.checked:hover {
+    border: solid 1px #ccc;
+}
+
+.iradio_minimal-orange.checked::after {
+    content:' ';
+    position:absolute;
+    left:5px;
+    top:5px;
+    width: 6px;
+    height: 6px;
+    background-color:#EE7700;
+    border-radius:50%;
+    z-index:-1;
+}
+.iradio_minimal-orange.disabled {
+    border: solid 1px #E4E4E4;
+    cursor: default;
+}
+.iradio_minimal-orange.checked.disabled {
+    border: solid 1px #E4E4E4;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox_minimal-orange,
+    .iradio_minimal-orange {
+    }
+}
+
+
